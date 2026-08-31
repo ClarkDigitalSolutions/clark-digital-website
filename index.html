@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clark Digital Solutions</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        header {
+            background: #102a43;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 70vh;
+            padding: 80px 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background: linear-gradient(135deg, #102a43, #147d92);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            max-width: 700px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 650px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #ffb703;
+            color: #102a43;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .services {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 34px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+        }
+
+        .card h3 {
+            color: #147d92;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .contact {
+            background: #e8f1f5;
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: #147d92;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #102a43;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Clark Digital Solutions</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <h2>Transformamos tus ideas en soluciones digitales</h2>
+
+            <p>
+                Ayudamos a emprendedores y pequeñas empresas a crecer
+                mediante tecnología, páginas web y servicios digitales
+                profesionales.
+            </p>
+
+            <a class="button" href="#contacto">Contáctanos</a>
+        </section>
+
+        <section class="services" id="servicios">
+            <h2>Nuestros servicios</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Diseño web</h3>
+                    <p>
+                        Creamos páginas web modernas, rápidas y adaptadas
+                        a teléfonos móviles.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Soluciones digitales</h3>
+                    <p>
+                        Implementamos herramientas que facilitan y mejoran
+                        las operaciones de tu empresa.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Soporte tecnológico</h3>
+                    <p>
+                        Brindamos orientación y asistencia para tus
+                        proyectos tecnológicos.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <h2>Contacto</h2>
+
+            <p>
+                Escríbenos:
+                <a href="mailto:david@sit-co.net">david@sit-co.net</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Clark Digital Solutions. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
